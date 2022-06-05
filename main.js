@@ -29,6 +29,7 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnSroll(){
+  let navigation = document.getElementById('navigation');
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
@@ -37,6 +38,7 @@ function showNavOnSroll(){
 }
 
 function showBackToTopButtonOnScroll(){
+  let backToTopButton = document.getElementById('backToTopButton');
   if (scrollY > 400) {
     backToTopButton.classList.add('show')
   } else {
